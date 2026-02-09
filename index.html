@@ -50,6 +50,28 @@ h1 {
   color: #333;
 }
 
+/* Love slide styles */
+.love-text {
+  font-size: 32px;
+  color: #ff1f6b;
+  font-weight: bold;
+}
+
+.heart {
+  font-size: 70px;
+  animation: bounce 1s infinite;
+}
+
+.sparkles {
+  font-size: 30px;
+  animation: sparkle 1.2s infinite;
+}
+
+.girl {
+  font-size: 60px;
+  margin-top: 10px;
+}
+
 button {
   margin-top: 25px;
   padding: 12px 28px;
@@ -68,6 +90,17 @@ button:hover {
 @keyframes slideFade {
   from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes sparkle {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
 }
 </style>
 </head>
@@ -102,7 +135,15 @@ button:hover {
   <div class="slide"><p class="reason">18. You calm my storms 🌊</p></div>
   <div class="slide"><p class="reason">19. You are my happiness 😊</p></div>
   <div class="slide"><p class="reason">20. You are my forever ❤️</p></div>
-  <div class="slide"><p class="reason">I LOVEEEEE YOUUUUUU❤️</p></div>
+
+  <!-- FINAL LOVE SLIDE -->
+  <div class="slide">
+    <div class="love-text">I Loveeeee Youuuu 💖</div>
+    <div class="sparkles">✨ ✨ ✨</div>
+    <div class="heart">❤️</div>
+    <div class="sparkles">✨ ✨ ✨</div>
+    <div class="girl">👧👓</div>
+  </div>
 
   <button onclick="nextSlide()">Next ➜</button>
 </div>
