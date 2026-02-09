@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Shipu ❤️</title>
+
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #ffd6e8, #e6f7ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider {
+  width: 90%;
+  max-width: 500px;
+  background: white;
+  border-radius: 24px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.slide {
+  display: none;
+  animation: slideFade 0.6s ease;
+}
+
+.slide.active {
+  display: block;
+}
+
+h1 {
+  color: #ff4d88;
+  font-size: 36px;
+}
+
+.penguin {
+  font-size: 90px;
+  margin: 15px 0;
+}
+
+.reason {
+  font-size: 20px;
+  color: #333;
+}
+
+button {
+  margin-top: 25px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 30px;
+  background: #ff4d88;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ff1f6b;
+}
+
+@keyframes slideFade {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="slider">
+
+  <div class="slide active">
+    <h1>🎉 Happy Birthday Shipu 🎉</h1>
+    <div class="penguin">🐧❤️</div>
+    <p class="reason">You make my world brighter ✨</p>
+  </div>
+
+  <div class="slide"><p class="reason">1. You always make me smile 😊</p></div>
+  <div class="slide"><p class="reason">2. You understand me without words 💭</p></div>
+  <div class="slide"><p class="reason">3. You support me endlessly 🤍</p></div>
+  <div class="slide"><p class="reason">4. Your kindness melts my heart 💕</p></div>
+  <div class="slide"><p class="reason">5. You make ordinary days special ✨</p></div>
+  <div class="slide"><p class="reason">6. You believe in me 🌱</p></div>
+  <div class="slide"><p class="reason">7. You are my safe place 🏡</p></div>
+  <div class="slide"><p class="reason">8. Your laugh is my favorite 🎶</p></div>
+  <div class="slide"><p class="reason">9. You respect my dreams 🌈</p></div>
+  <div class="slide"><p class="reason">10. You make me feel loved 💞</p></div>
+  <div class="slide"><p class="reason">11. You’re patient with me 🫶</p></div>
+  <div class="slide"><p class="reason">12. You make life warmer 🧡</p></div>
+  <div class="slide"><p class="reason">13. You are honest and real 🌿</p></div>
+  <div class="slide"><p class="reason">14. You care deeply 🥰</p></div>
+  <div class="slide"><p class="reason">15. You inspire me 💫</p></div>
+  <div class="slide"><p class="reason">16. You’re my best friend 🤍</p></div>
+  <div class="slide"><p class="reason">17. You choose me every day 💍</p></div>
+  <div class="slide"><p class="reason">18. You calm my storms 🌊</p></div>
+  <div class="slide"><p class="reason">19. You are my happiness 😊</p></div>
+  <div class="slide"><p class="reason">20. You are my forever ❤️</p></div>
+
+  <button onclick="nextSlide()">Next ➜</button>
+</div>
+
+<script>
+let current = 0;
+const slides = document.querySelectorAll('.slide');
+
+function nextSlide() {
+  slides[current].classList.remove('active');
+  current = (current + 1) % slides.length;
+  slides[current].classList.add('active');
+}
+</script>
+
+</body>
+</html>
