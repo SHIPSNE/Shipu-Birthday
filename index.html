@@ -103,6 +103,13 @@ h1 {
   font-style: italic;
 }
 
+.signature {
+  margin-top: 12px;
+  font-size: 18px;
+  color: #ff4d88;
+  font-weight: bold;
+}
+
 button {
   margin-top: 20px;
   padding: 12px 28px;
@@ -206,6 +213,9 @@ button:hover {
     <div class="final-line">
       No rush. Read this again when you miss me 🤍
     </div>
+    <div class="signature">
+      — Sneha ❤️
+    </div>
     <button class="replay" onclick="replayStory()">Replay Story ↺</button>
   </div>
 
@@ -215,7 +225,7 @@ button:hover {
 let current = 0;
 const slides = document.querySelectorAll('.slide');
 let interval;
-const delay = 6500;
+const delay = 4000; // 4 seconds per slide
 
 function showSlide(index) {
   slides.forEach(slide => slide.classList.remove('active'));
